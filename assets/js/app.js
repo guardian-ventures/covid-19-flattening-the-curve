@@ -58,8 +58,8 @@ function getSortedCountryArray(data) {
   let totalCountryCountArray = [];
   countriesArray.forEach(country => {
     let countryTimelineArray = data[country];
-    let countryRecoveredArray = countryTimelineArray.filter((item) => (item.recovered !== null))
-    let latestRecoveredCount = countryRecoveredArray.length > 0 ? (countryRecoveredArray[countryRecoveredArray.length - 1]).recovered : 0
+    let countryRecoveredArray = countryTimelineArray.filter((item) => (item.recovered !== null));
+    let latestRecoveredCount = countryRecoveredArray.length > 0 ? (countryRecoveredArray[countryRecoveredArray.length - 1]).recovered : 0;
     let latestCountryCount =
       countryTimelineArray[countryTimelineArray.length - 1].confirmed -
       (countryTimelineArray[countryTimelineArray.length - 1].deaths +
@@ -126,7 +126,7 @@ function generateGraphContent(data) {
     let xlabels = [];
     let ylabels = [];
     let dayCount = 0;
-    let recentRecovered = 0
+    let recentRecovered = 0;
     data[i.country].forEach(e => {
       if (e.confirmed !== 0) {
         dayCount = dayCount + 1;
@@ -193,12 +193,12 @@ function generateAllCharts(i, index, xlabels, ylabels) {
             index
           ].count.toLocaleString()}`,
           data: ylabels,
-          backgroundColor: ["rgba(255, 99, 132, 0.3)"],
-          borderColor: ["rgba(255, 99, 132, 1)"],
+          backgroundColor: ["rgba(204,163,0,0.3)"],
+          borderColor: ["rgb(204,163,0)"],
           lineTension: 0.4,
           borderWidth: 1,
           pointRadius: 2,
-          pointBackgroundColor: "rgba(255, 99, 132, 0.8)"
+          pointBackgroundColor: "rgba(204,163,0,0.8)"
         }
       ]
     },
