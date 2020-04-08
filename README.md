@@ -1,5 +1,5 @@
 
-## Flatenning the curve
+## The Guardian - Flatenning the curve
 A simple dashboard to track flattening of the curve by plotting the no.of active COVID-19 / Coronavirus cases over a period of time by countries.
 
 <a href="https://flattening-the-curve.commutatus.com/">
